@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { MainTabs } from '../../components';
 
 export default function TabOneScreen() {
   return (
-    <View className="flex-1 items-center justify-center dark:bg-layer-1">
-      <Text>Tab One</Text>
-      <View style={styles.separator} />
+    <View className="flex-1 dark:bg-layer-1">
+      <MainTabs />
     </View>
   );
 }

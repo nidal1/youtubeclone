@@ -9,10 +9,13 @@ import {
   Inter_500Medium,
   Inter_400Regular,
 } from '@expo-google-fonts/inter';
+
 import { Roboto_700Bold } from '@expo-google-fonts/roboto';
 import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
 import { useColorScheme } from 'nativewind';
+import Constants from 'expo-constants';
+import { View } from '../components/Themed copy';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -58,17 +61,27 @@ function RootLayoutNav() {
 
   const customDarkTheme = {
     ...DarkTheme,
-    background: 'rgb(10, 10, 10)',
+    background: 'rgb(40, 40, 40)',
   };
 
   return (
-    <ThemeProvider
-      value={colorScheme === 'dark' ? customDarkTheme : DefaultTheme}
+    // <ThemeProvider
+    //   value={colorScheme === 'dark' ? customDarkTheme : DefaultTheme}
+    // >
+    //   <StatusBar />
+    //   <Stack>
+    //     <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    //     <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
+    //   </Stack>
+    // </ThemeProvider>
+    <View
+      className="flex-1 dark:bg-layer-1 px-2"
+      style={{ paddingTop: Constants.statusBarHeight }}
     >
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
       </Stack>
-    </ThemeProvider>
+    </View>
   );
 }
