@@ -11,6 +11,8 @@ module.exports = {
       backgroundColor: {
         'layer-1': '#282828',
         'layer-2': '#c4c4c426',
+        'layer-3': 'rgba(0, 0, 0, 0.70)',
+        gray: '#DBE9FF',
       },
       colors: {
         gray: '#979797',

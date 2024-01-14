@@ -22,7 +22,7 @@ const renderItems = () => {
 };
 export default function tabs() {
   return (
-    <View>
+    <View className="mb-2">
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View className="ml-1 ">
           <Item>

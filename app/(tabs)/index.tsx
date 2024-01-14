@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
-import { MainTabs } from '../../components';
+import { HomeFeed, MainTabs } from '../../components';
 
 export default function TabOneScreen() {
   return (
     <View className="flex-1 dark:bg-layer-1">
       <MainTabs />
+      <HomeFeed />
     </View>
   );
 }
