@@ -11,7 +11,6 @@ export default function mixVideo({
   videoCaption: any;
   title: string;
   subtitle: string;
-  subtitle1: string;
 }) {
   return (
     <View className="flex flex-1 mb-5">

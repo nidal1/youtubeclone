@@ -1,7 +1,6 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
-const TB = require('../assets/images/video/Thumbnail-1.png');
-const PP = require('../assets/images/video/PP.png');
+
 const MV = require('../assets/icons/video-feed/more_vert.png');
 
 export default function feedVideo({

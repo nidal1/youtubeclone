@@ -2,7 +2,7 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
 import { AdsVideo, FeedVideo, MixVideo } from '../../ui';
-import { HomeShorts } from '..';
+import { shorts as HomeShorts } from './shorts';
 const gw = require('../../assets/images/video/google_workplace.png');
 const TM = require('../../assets/images/video/Thumbnail-mix.png');
 const TB1 = require('../../assets/images/video/Thumbnail-1.png');
@@ -56,7 +56,7 @@ export default function feed() {
         title="Config Europe 2020 - Keynote, Dylan Field - Embracing the tension betw..."
         subtitle="Figma   27K views   1 months ago"
       />
-      {/* <HomeShorts /> */}
+      <HomeShorts />
       <FeedVideo
         chanelPicture={PP1}
         videoCaption={TB5}
